@@ -1,0 +1,7 @@
+CREATE TABLE ExpirationDates(
+    id SERIAL PRIMARY KEY NOT NULL,
+    itemName TEXT NOT NULL,
+    SKU INT NOT NULL,
+    amount INT NOT NULL DEFAULT 1
+    dateExpired TIMESTAMP NOT NULL,
+)
