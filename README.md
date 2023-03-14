@@ -8,7 +8,3 @@ making something that helps everyone.
 
 
 Reid might help me, but this is honestly an excuse to just not do my other schoolwork project -_-
-
-
-
-/////
