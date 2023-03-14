@@ -1,0 +1,19 @@
+services:
+  - postgres:15
+
+variables:
+  POSTGRES_DB: expirationDate
+  POSTGRES_USER: ashwashere
+  POSTGRES_PASSWORD: bonkers
+  PYTHON_RUN: python3
+
+before_script:
+  - pip install -r requirements.txt
+  - cp config/github-credentials.yml config/db.yml
+
+testrunner:
+  script:
+    - echo "hello class"
+    - $PYTHON_RUN --version
+    - $PYTHON_RUN -m unittest -v
+  stage: test
